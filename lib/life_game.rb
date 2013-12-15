@@ -1,7 +1,7 @@
 class Cell
 	def initialize
 		@alive = true
-		@dead = true
+		@die = true
 		@born = true
 	end
 
@@ -9,7 +9,7 @@ class Cell
 		if num == 2 || 3
 			@alive = true
 		elsif num == 1 || 4
-			@dead = true
+			@die = true
 		elsif num == 3
 			@born = true	
 		end			
@@ -19,8 +19,8 @@ class Cell
 		@alive
 	end
 
-	def dead?
-		@dead
+	def die?
+		@die
 	end
 
 	def born?
